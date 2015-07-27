@@ -10,6 +10,12 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="No new activity started"
         android:id="@+id/textView_text" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="No new activity started"
+        android:id="@+id/textView_text2"/>
 
     <Button
         android:layout_width="wrap_content"

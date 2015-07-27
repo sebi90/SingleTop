@@ -22,11 +22,15 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onNewIntent (Intent intent) {
-        TextView textView_text = (TextView) findViewById(R.id.textView_text);
-        textView_text.setText("onNewIntent() ausgeführt. android:launchMode=\"singleTop\" gesetzt.");
+        TextView textView_text2 = (TextView) findViewById(R.id.textView_text2);
+        textView_text2.setText("onNewIntent() ausgeführt. android:launchMode=\"singleTop\" gesetzt.");
     }
 
     public void startNewActivity(View view) {
+        TextView textView_text2 = (TextView) findViewById(R.id.textView_text2);
+        TextView textView_text = (TextView) findViewById(R.id.textView_text);
+        textView_text.setText("");
+        textView_text2.setText("");
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
